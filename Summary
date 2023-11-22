@@ -1,0 +1,16 @@
+Bygningadministrationssystem
+
+  Funktionaliteter
+  - Oversigt
+  - Fjerne/tilføje sensorer og aktuatorer fra bygninger
+  - Fjerne/tilføje bygninger fra systemet
+
+
+  Klasser (abstrakte)
+  - Bygning
+    - Sensorer
+      - CO2-sensor
+        - måler CO2-niveau i bygning
+      - Temperatur-sensor
+        - måler temperatur i bygning
+    - Aktuatorer
