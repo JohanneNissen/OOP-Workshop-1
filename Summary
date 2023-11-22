@@ -2,8 +2,14 @@ Bygningadministrationssystem
 
   Funktionaliteter
   - Oversigt
+    - hent liste af bygninger
+    - hent liste af aktuatorer
+    - hent liste af sensorer
   - Fjerne/tilføje sensorer og aktuatorer fra bygninger
   - Fjerne/tilføje bygninger fra systemet
+  - Hente aktuatorværdi
+  - Ændre aktuatorværdi
+  - Hent værdi for CO2- og temperatursensorer
 
 
   Klasser (abstrakte)
@@ -14,3 +20,5 @@ Bygningadministrationssystem
       - Temperatur-sensor
         - måler temperatur i bygning
     - Aktuatorer
+      - (hydraulisk)
+      - (pneumatisk)
