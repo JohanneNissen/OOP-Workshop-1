@@ -6,11 +6,9 @@ public abstract class Actuator {
 
         return data;
     }
-    private void PrintData(){
+    public abstract void PrintData();
 
-    }
-
-    public void WriteData(){
-
+    public void WriteData(double data){
+        this.data = data;
     }
 }

@@ -12,7 +12,7 @@ public class BuildingManagementSystem {
         }
     }
 
-    private void AddBuilding(){
+    private void AddBuilding(String name){
         buildingList.add(new Building());
     }
 }

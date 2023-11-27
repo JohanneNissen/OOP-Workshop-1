@@ -7,4 +7,9 @@ public class VentilationActuator extends Actuator{
 
         return null;
     }
+
+    @Override
+    public void PrintData(){
+        System.out.println(this.getData());
+    }
 }
