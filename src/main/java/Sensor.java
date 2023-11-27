@@ -8,7 +8,7 @@ public abstract class Sensor {
         return data;
     }
 
-    private void PrintData(){
+    public abstract void PrintData();
 
-    }
+
 }
