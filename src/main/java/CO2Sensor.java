@@ -5,7 +5,15 @@ public class CO2Sensor extends Sensor{
         return CO2Level;
     }
 
+    public CO2Sensor(String name){
+        this.name = name;
+    }
     public String toString(){
         return null;
+    }
+
+    @Override
+    public void PrintData() {
+        System.out.print(getData());
     }
 }

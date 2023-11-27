@@ -6,14 +6,14 @@ public class Building {
 
     private String name;
 
-    public Building(String name, ArrayList<Actuator> actuatorList, ArrayList<Sensor> sensorList){
+    public Building(String name){
         this.name = name;
-        this.sensorList = sensorList;
-        this.actuatorList = actuatorList;
+
+
     }
     private void RemoveSensor(String name){
         for(int i = 0; i< sensorList.size(); i++){
-            if(name == sensorList(i).name)
+            if(name == sensorList.get(i).name)
                 sensorList.remove(i);
         }
     }
@@ -27,7 +27,7 @@ public class Building {
     private void RemoveActuator(String name){
 
         for (int i = 0; i < actuatorList.size(); i++) {
-            if(name == actuatorList(i).name)
+            if(name == actuatorList.get(i).name)
                 actuatorList.remove(i);
         }
     }
@@ -35,5 +35,26 @@ public class Building {
     private void AddActuator(Actuator actuator){
 
         actuatorList.add(actuator);
+    }
+
+    public ArrayList<Actuator>GetActuators(){
+        actuatorList = new ArrayList<Actuator>();
+        VentilationActuator AC = new VentilationActuator("pøllemåler");
+        actuatorList.add(AC);
+        return actuatorList;
+    }
+
+    public ArrayList<Sensor>GetSensors(){
+        sensorList = new ArrayList<Sensor>();
+        TemperatureSensor temp = new TemperatureSensor("varm kakao måler");
+        sensorList.add(temp);
+        CO2Sensor co2Sensor = new CO2Sensor("pruttemåler");
+        sensorList.add(co2Sensor);
+
+        return sensorList;
+    }
+
+    public String getName(){
+        return this.name;
     }
 }

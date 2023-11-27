@@ -1,5 +1,5 @@
 public abstract class Sensor {
-    private String name;
+    protected String name;
 
     private double data;
 
@@ -10,5 +10,7 @@ public abstract class Sensor {
 
     public abstract void PrintData();
 
-
+    public String getName() {
+        return name;
+    }
 }

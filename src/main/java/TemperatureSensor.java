@@ -5,7 +5,15 @@ public class TemperatureSensor extends Sensor{
         return temperature;
     }
 
+    public TemperatureSensor(String name){
+        this.name = name;
+    }
     public String toString(){
         return null;
+    }
+
+    @Override
+    public void PrintData() {
+        System.out.print(getData());
     }
 }

@@ -1,4 +1,8 @@
 public class VentilationActuator extends Actuator{
+
+    public VentilationActuator(String name){
+        this.name = name;
+    }
     private void setValue(double value){
 
     }

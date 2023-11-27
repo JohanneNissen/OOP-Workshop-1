@@ -1,5 +1,5 @@
 public abstract class Actuator {
-    private String name;
+    protected String name;
 
     private double data;
     public double getData(){
