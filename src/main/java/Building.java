@@ -6,19 +6,34 @@ public class Building {
 
     private String name;
 
-    private void RemoveSensor(){
+    public Building(String name, ArrayList<Actuator> actuatorList, ArrayList<Sensor> sensorList){
+        this.name = name;
+        this.sensorList = sensorList;
+        this.actuatorList = actuatorList;
+    }
+    private void RemoveSensor(String name){
+        for(int i = 0; i< sensorList.size(); i++){
+            if(name == sensorList(i).name)
+                sensorList.remove(i);
+        }
+    }
+
+    private void AddSensor(Sensor sensor){
+
+        sensorList.add(sensor);
 
     }
 
-    private void AddSensor(){
+    private void RemoveActuator(String name){
 
+        for (int i = 0; i < actuatorList.size(); i++) {
+            if(name == actuatorList(i).name)
+                actuatorList.remove(i);
+        }
     }
 
-    private void RemoveActuator(){
+    private void AddActuator(Actuator actuator){
 
-    }
-
-    private void AddActuator(){
-
+        actuatorList.add(actuator);
     }
 }
